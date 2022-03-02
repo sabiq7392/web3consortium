@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { Col, Row, Container } from 'react-bootstrap';
-import { Typhography, Grid, Flex } from '../styles/globalsStyled';
+import { Typhography, Grid, Flex } from '../styles/MameStyled/Mame.styled';
 import Image from 'next/image';
 import { useEffect } from 'react';
+import { EnglishTranslate, IndonesiaTranslate } from '../src/utils/Language';
 
 const screen = {
   lg: 'min-width: 992px',
@@ -57,12 +58,18 @@ export default function About() {
         <Row as={Container} className="m-0 p-0">
           <Col lg={6} as={Grid} center>
             <Grid gap={30} style={{ background: 'rgba(0,0,0,0.5)', padding: 30 }}>
-              <Typhography as="h1" large bold>About</Typhography>
-              <Typhography small color="#ccc">
-                our mission is to nurture cutting-edge applications for decentralized web software protocols.
+              <Typhography as="h1" large bold>
+                <EnglishTranslate>About</EnglishTranslate>
+                <IndonesiaTranslate>Tentang</IndonesiaTranslate>
               </Typhography>
               <Typhography small color="#ccc">
-              our passion is delivering Web 3.0, a decentralized and fair internet where users control their own data, identity and destiny.              </Typhography>
+                <EnglishTranslate>our mission is to nurture cutting-edge applications for decentralized web software protocols.</EnglishTranslate>
+                <IndonesiaTranslate>misi kami adalah untuk memelihara aplikasi mutakhir untuk protokol perangkat lunak web terdesentralisasi.</IndonesiaTranslate>
+              </Typhography>
+              <Typhography small color="#ccc">
+                <EnglishTranslate>our passion is delivering Web 3.0, a decentralized and fair internet where users control their own data, identity and destiny.</EnglishTranslate>
+                <IndonesiaTranslate>semangat kami adalah menghadirkan Web 3.0, internet yang terdesentralisasi dan adil di mana pengguna mengontrol data, identitas, dan takdir mereka sendiri.</IndonesiaTranslate>
+              </Typhography>
             </Grid>
           </Col>
           <Col lg={6} as={Grid} center ariaLabel="image of free data movement">
@@ -74,11 +81,23 @@ export default function About() {
       <section className="bg-black">
         <Container style={{ padding: '120px 0' }}>
           <Grid gap={30} style={{ border: '4px solid #555', padding: 60 }}>
-            <Typhography as="h2" semibold large><span style={{ color: '#1E92BA' }}>Web3 Consortium</span> believes in an internet where:</Typhography>
+            <Typhography as="h2" semibold large>
+              <EnglishTranslate><span style={{ color: '#1E92BA' }}>Web3 Consortium</span> believes in an internet where:</EnglishTranslate>
+              <IndonesiaTranslate><span style={{ color: '#1E92BA' }}>Web3 Consortium</span> meyakini bahwa sebuah internet seharusnya:</IndonesiaTranslate>
+            </Typhography>
             <Grid as="ul" gap={15}>
-              <Typhography as="li" color="#ccc" medium>Users own their own data, not corporations</Typhography>
-              <Typhography as="li" color="#ccc" medium>Global digital transactions are secure</Typhography>
-              <Typhography as="li" color="#ccc" medium>Online exchanges of information and value are decentralized</Typhography>
+              <Typhography as="li" color="#ccc" medium>
+                <EnglishTranslate></EnglishTranslate>
+                <IndonesiaTranslate>Pengguna memiliki data mereka sendiri, bukan perusahaan</IndonesiaTranslate>
+              </Typhography>
+              <Typhography as="li" color="#ccc" medium>
+                <EnglishTranslate>Global digital transactions are secure</EnglishTranslate>
+                <IndonesiaTranslate>Transaksi digital global aman</IndonesiaTranslate>
+              </Typhography>
+              <Typhography as="li" color="#ccc" medium>
+                <EnglishTranslate>Online exchanges of information and value are decentralized</EnglishTranslate>
+                <IndonesiaTranslate>Pertukaran informasi dan nilai online didesentralisasi</IndonesiaTranslate>
+              </Typhography>
             </Grid>
           </Grid>
         </Container>
@@ -88,7 +107,10 @@ export default function About() {
         <Container as={Grid} gap={60} style={{ padding: '120px 0' }}>
           <header>
             <Typhography as="small" large color="#737373">Web3 Consortium</Typhography>
-            <Typhography as="h2" large bold color="#333">Council</Typhography>
+            <Typhography as="h2" large bold color="#333">
+              <EnglishTranslate>Council</EnglishTranslate>
+              <IndonesiaTranslate>Dewan</IndonesiaTranslate>
+            </Typhography>
           </header>
           <Row className="g-5">
             {councilData.map((_council, _councilIndex) =>

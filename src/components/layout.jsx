@@ -8,8 +8,7 @@ export default function Layout({ children }) {
     <>
       <Head>
 				<title>Web3 Consortium</title>
-				<meta name="description" content="YuMeta is marketplace or gallery especially for NFTs" />
-				<link rel="icon" href="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
       <Header />
       <main>{children}</main>

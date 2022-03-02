@@ -1,4 +1,4 @@
-import { Flex, Grid, Typhography } from '../styles/globalsStyled';
+import { Flex, Grid, Typhography } from '../styles/MameStyled/Mame.styled';
 import Image from 'next/image';
 import { BsCheckCircleFill, BsXCircleFill } from 'react-icons/bs';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -31,12 +31,6 @@ export default function WhyShouldIJoin() {
       background: '#2D2D2D',
     },
   ];
-
-  // useEffect(() => {
-  //   const footerWebsite = document.querySelector('#footerWebsite');
-  //   footerWebsite.classList.remove('bg-black');
-  //   footerWebsite.classList.add('bg-white');
-  // });
 
   return (
     <article>

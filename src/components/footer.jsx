@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Flex } from '../../styles/globalsStyled';
+import { Flex } from '../../styles/MameStyled/Mame.styled';
 import { Container } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 

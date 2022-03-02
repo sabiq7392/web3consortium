@@ -1,6 +1,13 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import { Flex, Grid, Typhography } from '../styles/globalsStyled';
-import { LearnWeb3Container } from '../styles/styledLearnWeb3';
+import { Grid, Typhography } from '../styles/MameStyled/Mame.styled';
+import styled from 'styled-components';
+
+export const LearnWeb3Container = styled.div`
+  background: url("/images/bg/bg_web_3_0.svg");
+  background-repeat: no-repeat;
+  background-position-y: 100px;
+  height: 350px;
+`;
 
 export default function LearnWeb3() {
   const learnWeb3Data = [
