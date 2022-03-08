@@ -11,7 +11,8 @@ export default function Note() {
 
   const connect = async () => {
     try {
-      const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
+      const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3'; // CATATAN klo network di localhost
+      // const contractAddress = '0x5dc10C67E69b4c840C5a7FC3d41e83114496E435'; // CATATAN klo network di ropsten
 
       await ethereum.request({ method: 'eth_requestAccounts' }); // CATATAN eth_sendTransactions
       const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -77,7 +78,7 @@ export default function Note() {
           <Container>
             {notes.map((_note, _noteIndex) =>
               <article key={_noteIndex} className="border p-5 bg-light">
-                <h2>{_note}</h2>
+                <h2>{_note !== 'jembut' ? _note : ''}</h2>
               </article>
             )}
           </Container>

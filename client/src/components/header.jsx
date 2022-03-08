@@ -30,6 +30,7 @@ export default function Header() {
     { name: <><EnglishTranslate>About</EnglishTranslate> <IndonesiaTranslate>Tentang</IndonesiaTranslate></>, href: '/about', isActive: false, },
     { name: <><EnglishTranslate>Projects</EnglishTranslate> <IndonesiaTranslate>Projek</IndonesiaTranslate></>, href: '/projects', isActive: false },
     { name: <><EnglishTranslate>Learn Web3</EnglishTranslate> <IndonesiaTranslate>Pelajari Web3</IndonesiaTranslate></>, href: '/learn-web-3',  isActive: false },
+    { name: <><EnglishTranslate>Notes</EnglishTranslate><IndonesiaTranslate>Catatan</IndonesiaTranslate></>, href: '/notes', isActive: false },
     { name: 'Join', href: '/why-should-i-join',  isActive: false },
   ];
 
