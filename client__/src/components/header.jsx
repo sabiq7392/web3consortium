@@ -3,6 +3,7 @@ import { Navbar, Container, Nav, Button, ButtonGroup } from 'react-bootstrap';
 import styled from 'styled-components';
 import Flags from 'country-flag-icons/react/3x2'
 import { useEffect, useState } from 'react';
+import { EnglishTranslate, IndonesiaTranslate } from '../utils/Language';
 
 const CustomNavbarNav = styled.ul`
   @media (max-width: 991px) {
@@ -26,9 +27,9 @@ export default function Header() {
 
   const appbar = [
     { name: 'Home', href: '/', isActive: true, },
-    { name: 'About', href: '/about', isActive: false, },
-    { name: 'Projects', href: '/projects', isActive: false },
-    { name: 'Learn Web3', href: '/learn-web-3',  isActive: false },
+    { name: <><EnglishTranslate>About</EnglishTranslate> <IndonesiaTranslate>Tentang</IndonesiaTranslate></>, href: '/about', isActive: false, },
+    { name: <><EnglishTranslate>Projects</EnglishTranslate> <IndonesiaTranslate>Projek</IndonesiaTranslate></>, href: '/projects', isActive: false },
+    { name: <><EnglishTranslate>Learn Web3</EnglishTranslate> <IndonesiaTranslate>Pelajari Web3</IndonesiaTranslate></>, href: '/learn-web-3',  isActive: false },
     { name: 'Join', href: '/why-should-i-join',  isActive: false },
   ];
 

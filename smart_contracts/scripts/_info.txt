@@ -1,0 +1,1 @@
+untuk berinteraksi hardhat dengan smart contract

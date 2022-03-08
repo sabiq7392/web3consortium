@@ -16,12 +16,10 @@ export default function MyApp({ Component, pageProps }) {
     fetch('http://ip-api.com/json/')
       .then((response) => response.json())
       .then((data) => {
-        setCountry(data.countryCode)
-        console.log(data)
+        setCountry(data.countryCode);
+        // console.log(data);
       })
       .then(() => {
-        
-
         if (country === 'ID') {
           toggleIndonesiaLanguage.classList.add('active', 'border');
           toggleEnglishLanguage.classList.remove('active', 'border');
@@ -31,11 +29,11 @@ export default function MyApp({ Component, pageProps }) {
         }
 
         if (toggleIndonesiaLanguage.classList.contains('active')) { 
-          console.log({ indonesia: 'active' });
+          // console.log({ indonesia: 'active' });
           indonesiaTranslate.forEach((_indonesiaTranslate) => _indonesiaTranslate.classList.remove('d-none'));
           englishTranslate.forEach((_englishTranslate) => _englishTranslate.classList.add('d-none'));
         } else {
-          console.log({ english: 'active' })
+          // console.log({ english: 'active' })
           indonesiaTranslate.forEach((_indonesiaTranslate) => _indonesiaTranslate.classList.add('d-none'));
           englishTranslate.forEach((_englishTranslate) => _englishTranslate.classList.remove('d-none'));
         }

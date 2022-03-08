@@ -5,7 +5,6 @@ import { Row, Col, Container, Button }  from 'react-bootstrap';
 import { Typhography, Grid, Div } from '../styles/MameStyled/Mame.styled';
 import Image from 'next/image';
 import { EnglishTranslate, IndonesiaTranslate } from '../src/utils/Language';
-import Web3 from 'web3';
 
 const screen = {
   lg: 'min-width: 992px',
@@ -44,17 +43,7 @@ const OpenData = styled.article`
 `;
 
 
-// 'https://rpc-mumbai.matic.today'
 export default function Home() {
-  // const testWeb3 = async () => {
-  //   const web3 = new Web3(Web3.givenProvider);
-  //   const getAccounts = await web3.eth.getAccounts();
-
-  //   console.log(requestAccounts)
-  // };
-
-  // testWeb3()
-
   const openData = [
     { 
       title: <>
@@ -104,11 +93,8 @@ export default function Home() {
       background: '#333', col: 12 }
   ];
 
-
-
   return (
     <article>
-      <Button>Test Eth</Button>
       <Hero>
         <Row as={Container} className="m-0 p-0">
           <Col lg={6} as={Grid} center>

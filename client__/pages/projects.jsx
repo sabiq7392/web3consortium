@@ -22,11 +22,8 @@ const ProjectsHeroContainer = styled.section`
 export default function Projects() {
   const projectsData = [
     {
-      title: <>
-        <EnglishTranslate>Polkadot: Web3 Foundation${"`"}s flagship protocols</EnglishTranslate>
-        <IndonesiaTranslate>Polkadot: Protokol unggulan Web3 Foundations</IndonesiaTranslate>
-      </>,
-      image: '/images/items/item_slider_1.png',
+      title: 'Metamask', 
+      image: '/images/items/item_metamask.png',
       description: <>
         <EnglishTranslate>Polkadot is a scalable sharded chain and the first protocol that provides a secure environtment for cross-chain composability</EnglishTranslate>
         <IndonesiaTranslate>Polkadot adalah sharded chain yang dapat diskalakan dan protokol pertama yang menyediakan lingkungan yang aman untuk komposisi lintas-rantai</IndonesiaTranslate>
@@ -34,11 +31,8 @@ export default function Projects() {
       background: '#EEEEEE',
     },
     {
-      title: <>
-        <EnglishTranslate>Kusama: Canary Network</EnglishTranslate>
-        <IndonesiaTranslate>Kusama: Jaringan Canary</IndonesiaTranslate>
-      </>,
-      image: '/images/items/item_slider_2.png',
+      title: 'Polygon',
+      image: '/images/items/item_polygon.webp',
       description: <>
         <EnglishTranslate>Kusama is a scalable development network built on nearly the same codebase as Polkadot. It${"`"}s designed for teams who want to move fast and innovate</EnglishTranslate>
         <IndonesiaTranslate>Kusama adalah jaringan pengembangan terukur yang dibangun di atas basis kode yang hampir sama dengan Polkadot. Ini dirancang untuk tim yang ingin bergerak cepat dan berinovasi</IndonesiaTranslate>
@@ -46,11 +40,8 @@ export default function Projects() {
       background: '#E4E4E4',
     },
     {
-      title: <>
-        <EnglishTranslate>XCMP: Cross-Chain Message Passing</EnglishTranslate>
-        <IndonesiaTranslate>XCMP: Pengiriman Pesan Lintas Rantai</IndonesiaTranslate>
-      </>,
-      image: '/images/items/item_slider_3.png',
+      title: 'Redhat',
+      image: '/images/items/item_redhat.png',
       description: <>
         <EnglishTranslate>A subset of Polkadot, XCMP is a decentralized messaging protocol that emphasizes privacy and security</EnglishTranslate>
         <IndonesiaTranslate>Bagian dari Polkadot, XCMP adalah protokol perpesanan terdesentralisasi yang menekankan privasi dan keamanan</IndonesiaTranslate>

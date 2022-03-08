@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import { CgArrowLongRight } from 'react-icons/cg';
 import styled from 'styled-components';
-import { Row, Col, Container }  from 'react-bootstrap';
+import { Row, Col, Container, Button }  from 'react-bootstrap';
 import { Typhography, Grid, Div } from '../styles/MameStyled/Mame.styled';
 import Image from 'next/image';
 import { EnglishTranslate, IndonesiaTranslate } from '../src/utils/Language';
-import { useEffect, useState } from 'react';
+import { ethers } from 'ethers';
+import { useEffect } from 'react';
 
 const screen = {
   lg: 'min-width: 992px',
@@ -43,9 +44,8 @@ const OpenData = styled.article`
   padding: 114px 0;
 `;
 
-export default function Home() {
-  const [language, setLanguage] = useState('US');
 
+export default function Home() {
   const openData = [
     { 
       title: <>
@@ -95,14 +95,17 @@ export default function Home() {
       background: '#333', col: 12 }
   ];
 
-  // useEffect(() => {
-  //   if (document.getElementById('toggleIndonesiaLanguage').classList.contains('active')) {
-  //     console.log('hai')
-  //   }
-  // });
+  useEffect(() => {
+    const connect = () => {
+      console.log('provider hai');
+    };
+
+    connect();
+  }, []);
 
   return (
     <article>
+      <Button>Test Eth</Button>
       <Hero>
         <Row as={Container} className="m-0 p-0">
           <Col lg={6} as={Grid} center>
